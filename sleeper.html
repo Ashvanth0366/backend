@@ -304,7 +304,7 @@ function createSeatElement(number, bookedSeats) {
                 return; 
             } 
  
-            const res = await fetch("https://backend-zf7c.onrender.com/cancel-seat", { 
+            const res = await fetch("https://backend-zf7c.onrender.com/book-seat", { 
                 method: "POST", 
                 headers: { 
                     "Content-Type": "application/json" 
