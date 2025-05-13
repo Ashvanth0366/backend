@@ -231,7 +231,7 @@ onclick="downloadTicket()">Download Tkt</button>
         let selectedSeats = []; 
  
         async function fetchBookedSeats() { 
-            const res = await fetch(`https://backend.onrender.com/booked-seats?busId=${busId}&date=${date}`); 
+            const res = await fetch(`https://backend-zf7c.onrender.com/booked-seats?busId=${busId}&date=${date}`); 
             const data = await res.json(); 
             return data.bookedSeats; // Array of seat numbers 
         } 
@@ -304,7 +304,7 @@ function createSeatElement(number, bookedSeats) {
                 return; 
             } 
  
-            const res = await fetch("https://backend.onrender.com/cancel-seat", { 
+            const res = await fetch("https://backend-zf7c.onrender.com/cancel-seat", { 
                 method: "POST", 
                 headers: { 
                     "Content-Type": "application/json" 
