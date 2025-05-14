@@ -201,7 +201,7 @@ href="mailto:support@example.com">support@example.com</a></p>
           const email = form.email.value; 
           const message = form.message.value; 
        
-          const response = await fetch("https://backend-zf7c.onrender.com/cancel-seat", { 
+          const response = await fetch("https://backend-zf7c.onrender.com/contact", { 
             method: 'POST', 
             headers: { 'Content-Type': 'application/json' }, 
             body: JSON.stringify({ name, email, message }) 
